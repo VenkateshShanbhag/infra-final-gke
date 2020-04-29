@@ -42,19 +42,11 @@ variable "max_node_count" {
   type = number
 }
 
-
 variable "gke_version" {
   type    = string
   default = ""
 }
 
-
-variable "subnetwork_name" {
-  default = ""
-}
-variable "network_name" {
-  default = ""
-}
 variable "gke_cluster_name" {
   default = ""
 }
@@ -63,6 +55,31 @@ variable "gke_cluster_name" {
 variable "auto_repair" {
   default = ""
 }
+
 variable "auto_upgrade" {
+  default = ""
+}
+
+variable "subnet_ip_cidr_range" {
+  default = ""
+}
+
+variable "cluster_secondary_range_name" {
+  default = ""
+}
+
+variable "cluster_ipv4_cidr_block" {
+  default = ""
+}
+
+variable "services_secondary_range_name" {
+  default = ""
+}
+
+variable "services_ipv4_cidr_block" {
+  default = ""
+}
+
+variable "google_service_apis" {
   default = ""
 }

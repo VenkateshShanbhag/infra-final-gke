@@ -11,13 +11,9 @@ min_node_count              = 1
 max_node_count              = 2
 //node_pool_disk_size             = 10
 gke_instance_type               = "n1-standard-1"
-
-
 network_name = "demo2-network"
 subnetwork_name = "demo2-subnetwork"
 gke_cluster_name = "lowes-cluster1"
-ssd_name = "pd-ssd"
 
-storage_provisioner = "kubernetes.io/gce-pd"
 auto_repair = "true"
 auto_upgrade = "true"

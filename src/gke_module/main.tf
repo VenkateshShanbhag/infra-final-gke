@@ -13,12 +13,15 @@ module "gke_tamplate" {
   max_node_count                 = var.max_node_count
   gke_instance_type = var.gke_instance_type
 
-  network_name        = var.network_name
-  subnetwork_name     = var.subnetwork_name
-
   gke_cluster_name    = var.gke_cluster_name
 
   auto_repair = var.auto_repair
   auto_upgrade = var.auto_upgrade
+  subnet_ip_cidr_range = var.subnet_ip_cidr_range
+  cluster_secondary_range_name = var.cluster_secondary_range_name
+  cluster_ipv4_cidr_block = var.cluster_ipv4_cidr_block
+  services_secondary_range_name = var.services_secondary_range_name
+  services_ipv4_cidr_block = var.services_ipv4_cidr_block
+  google_service_apis = var.google_service_apis
 }
 
