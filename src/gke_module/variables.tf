@@ -58,12 +58,7 @@ variable "network_name" {
 variable "gke_cluster_name" {
   default = ""
 }
-variable "storage_provisioner" {
-  default = ""
-}
-variable "ssd_name" {
-  default = ""
-}
+
 
 variable "auto_repair" {
   default = ""

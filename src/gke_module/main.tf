@@ -17,8 +17,7 @@ module "gke_tamplate" {
   subnetwork_name     = var.subnetwork_name
 
   gke_cluster_name    = var.gke_cluster_name
-  ssd_name            = var.ssd_name
-  storage_provisioner = var.storage_provisioner
+
   auto_repair = var.auto_repair
   auto_upgrade = var.auto_upgrade
 }
