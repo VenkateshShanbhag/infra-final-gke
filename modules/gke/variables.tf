@@ -5,7 +5,6 @@ variable "project_name" {
 
 
 variable "region" {
-  type    = string
   default = ""
 }
 
@@ -48,23 +47,31 @@ variable "gke_version" {
   default = ""
 }
 
-
-variable "network_name" {
-  type = string
-}
-
-variable "subnetwork_name" {
-  type = string
-}
-
 variable "gke_cluster_name" {
   type = string
 }
 
-variable "ssd_name" {
-  type = string
+variable "subnet_ip_cidr_range" {
+  default = ""
 }
 
-variable "storage_provisioner" {
-  type = string
+variable "cluster_secondary_range_name" {
+  default = ""
 }
+
+variable "cluster_ipv4_cidr_block" {
+  default = ""
+}
+
+variable "services_secondary_range_name" {
+  default = ""
+}
+
+variable "services_ipv4_cidr_block" {
+  default = ""
+}
+
+variable "google_service_apis" {
+  default = ""
+}
+
