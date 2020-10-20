@@ -3,7 +3,7 @@ project_name   = "demo2"
 project_id = "demo2-273713"
 
 ### GKE Variable
-gke_version                     = "1.15.11-gke.3"
+gke_version                     = "1.15.12-gke.20"
 gke_namespaces                  = []
 initial_node_count              = 1
 gke_preemptible = "false"
