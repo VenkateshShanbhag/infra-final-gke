@@ -1,2 +1,2 @@
-bucket  = "lowes-dev-deplyment1"
+bucket  = "demo2-project-bucket"
 prefix  = "terraform-state"
